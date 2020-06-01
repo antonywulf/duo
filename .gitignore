@@ -25,3 +25,5 @@ yarn-error.log*
 #my
 .prettierrc
 yarn.lock
+src/assets
+src/config
