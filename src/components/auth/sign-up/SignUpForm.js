@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import styles from '../Auth.module.scss';
 
 class SignUpForm extends Component {
   state = {
@@ -21,18 +22,41 @@ class SignUpForm extends Component {
 
   render() {
     return (
-      <form className="pt-5 pb-3" onSubmit={this.handleSubmit}>
+      <form className="pt-3" onSubmit={this.handleSubmit}>
         <div className="form-group">
-          <legend className="text-center">Sign Up To Get Started</legend>
+          <legend className={`text-center ${styles.legend}`}>Create Account</legend>
+        </div>
+
+        <div className="form-group">
+          <input
+            onChange={this.handleChange}
+            type="text"
+            className={`form-control ${styles.input}`}
+            id="firstName"
+            placeholder="First Name"
+            autoComplete="off"
+          />
+        </div>
+
+        <div className="form-group">
+          <input
+            onChange={this.handleChange}
+            type="text"
+            className={`form-control ${styles.input}`}
+            id="lastName"
+            placeholder="Last Name"
+            autoComplete="off"
+          />
         </div>
 
         <div className="form-group">
           <input
             onChange={this.handleChange}
             type="email"
-            className="form-control"
+            className={`form-control ${styles.input}`}
             id="email"
             placeholder="Email"
+            autoComplete="off"
           />
         </div>
 
@@ -40,34 +64,16 @@ class SignUpForm extends Component {
           <input
             onChange={this.handleChange}
             type="password"
-            className="form-control"
+            className={`form-control ${styles.input}`}
             id="password"
             placeholder="Password"
           />
         </div>
 
-        <div className="form-group">
-          <input
-            onChange={this.handleChange}
-            type="text"
-            className="form-control"
-            id="firstName"
-            placeholder="First Name"
-          />
-        </div>
-
-        <div className="form-group">
-          <input
-            onChange={this.handleChange}
-            type="text"
-            className="form-control"
-            id="lastName"
-            placeholder="Last Name"
-          />
-        </div>
-
         <div className="form-group text-center">
-          <button className="btn btn-outline-primary btn-lg">Sign Up</button>
+          <button className={`btn btn-lg mt-3 px-5 font-weight-bolder ${styles.button}`}>
+            Sign Up
+          </button>
         </div>
       </form>
     );

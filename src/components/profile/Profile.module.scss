@@ -1,0 +1,25 @@
+@import 'src/variables';
+
+.block {
+  background: $myGrey-300;
+  min-height: 100vh;
+}
+
+.h1 {
+  color: $myRed;
+}
+
+.button {
+  background: $myGreen;
+  color: $myGrey-100;
+  border-radius: 2rem;
+  &:hover {
+    box-shadow: none;
+    color: $myGrey-100;
+  }
+}
+
+.loadingP {
+  color: $myGrey-500;
+  font-size: 1.5rem;
+}

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import styles from '../Auth.module.scss';
 
 class SignInForm extends Component {
   state = {
@@ -19,18 +20,19 @@ class SignInForm extends Component {
 
   render() {
     return (
-      <form className="mt-5 pt-5 pb-3" onSubmit={this.handleSubmit}>
+      <form className="pt-3" onSubmit={this.handleSubmit}>
         <div className="form-group">
-          <legend className="text-center">Sign In To Continue</legend>
+          <legend className={`text-center ${styles.legend}`}>Sign In To Continue</legend>
         </div>
 
         <div className="form-group">
           <input
             onChange={this.handleChange}
             type="email"
-            className="form-control"
+            className={`form-control ${styles.input}`}
             id="email"
             placeholder="Email"
+            autoComplete="off"
           />
         </div>
 
@@ -38,14 +40,18 @@ class SignInForm extends Component {
           <input
             onChange={this.handleChange}
             type="password"
-            className="form-control"
+            className={`form-control ${styles.input}`}
             id="password"
             placeholder="Password"
           />
         </div>
 
         <div className="form-group text-center">
-          <button className="btn btn-outline-primary btn-lg">Sign In</button>
+          <button
+            className={`btn btn-lg mt-3 px-5 font-weight-bolder removeOutline ${styles.button}`}
+          >
+            Sign In
+          </button>
         </div>
       </form>
     );

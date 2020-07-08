@@ -4,6 +4,7 @@ import { ArrowReturnRight } from '../../ui/svg/svg';
 import SignUpForm from './SignUpForm';
 import { connect } from 'react-redux';
 import { signUp } from '../../../store/actions/authActions';
+import styles from '../Auth.module.scss';
 
 const SignUp = props => {
   const { auth, signUp, authError } = props;
@@ -11,12 +12,11 @@ const SignUp = props => {
   if (auth.uid) return <Redirect to="/" />;
 
   return (
-    <div className="container mt-4 pt-4">
+    <div className={`container mt-2 pt-4 ${styles.block}`}>
+      <div className={`${styles.img}`} />
       <SignUpForm signUp={signUp} />
-      {authError ? <p className="text-center text-danger">{authError}</p> : null}
-
-      <hr />
-      <p className="text-center">
+      {authError ? <p className={`text-center lead ${styles.errMsg}`}>{authError}</p> : null}
+      <p className={`lead text-center mt-4 ${styles.p}`}>
         Already have an account?
         <br />
         <ArrowReturnRight />{' '}

@@ -1,12 +1,12 @@
 import React from 'react';
+import styles from './Recipes.module.scss';
 import { Link } from 'react-router-dom';
-import styles from './Organizers.module.scss';
 
-const OrganizersItem = props => {
-  const { title, linkTo } = props.organizer;
+const RecipesItem = props => {
+  const { title, linkTo } = props.recipe;
 
   return (
-    <Link to={linkTo} className="removeTextDecoration">
+    <Link to={`recipes/${linkTo}`} className="removeTextDecoration">
       <div className={`card mb-3 ${styles.cardItem}`}>
         <div className="row align-items-center py-2">
           <div className="col-4 pl-4">
@@ -23,4 +23,4 @@ const OrganizersItem = props => {
   );
 };
 
-export default OrganizersItem;
+export default RecipesItem;

@@ -9,7 +9,12 @@ const TopNavigation = props => {
 
   return (
     <div className="container">
-      <nav className="nav nav-tabs nav-fill fixed-top nav-justified bg-white">{links}</nav>
+      <nav
+        style={{ background: '#29323b' }}
+        className="nav nav-tabs nav-fill fixed-top nav-justified"
+      >
+        {links}
+      </nav>
     </div>
   );
 };

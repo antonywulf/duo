@@ -1,0 +1,120 @@
+@import 'src/variables';
+
+.breakfasts {
+  background-image: url('/images/breakfast.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 4rem;
+  background-size: contain;
+}
+
+.dinners {
+  background-image: url('/images/soup.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 4rem;
+  background-size: contain;
+}
+
+.suppers {
+  background-image: url('/images/dinner.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 4rem;
+  background-size: contain;
+}
+
+.drinks {
+  background-image: url('/images/juice.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 4rem;
+  background-size: contain;
+}
+
+.desserts {
+  background-image: url('/images/muffin.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 4rem;
+  background-size: contain;
+}
+
+.snacks {
+  background-image: url('/images/sandwich.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 4rem;
+  background-size: contain;
+}
+
+.salads {
+  background-image: url('/images/salad.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 4rem;
+  background-size: contain;
+}
+
+.other {
+  background-image: url('/images/other.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 4rem;
+  background-size: contain;
+}
+
+.block {
+  background: $myGrey-300;
+  min-height: 100vh;
+}
+
+.cardItem {
+  background: $myGrey-300;
+  box-shadow: 0 1px 4px $myBlue;
+  h4 {
+    color: $myBlue;
+    text-transform: uppercase;
+  }
+}
+
+.h3 {
+  color: $myRed;
+}
+
+.plus {
+  color: $myRed;
+}
+
+.noRecipe {
+  color: $myGrey-700;
+}
+
+.searchPanel[type='text'] {
+  color: $myWhite;
+  background: transparent;
+  box-shadow: inset 0 -2px 0 $myGrey-700;
+  font-size: 1rem;
+
+  &::placeholder {
+    color: $myGrey-700;
+  }
+
+  &:focus {
+    box-shadow: inset 0 -2px 0 #73b664;
+  }
+}
+
+.cardItemDetails {
+  background: $myGrey-300;
+  box-shadow: 0 1px 4px $myBlue;
+  h5 {
+    color: $myBlue;
+    text-transform: uppercase;
+  }
+}
+
+.loadingP {
+  color: $myGrey-500;
+  font-size: 1.5rem;
+}

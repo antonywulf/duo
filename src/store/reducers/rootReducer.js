@@ -1,14 +1,14 @@
 import { combineReducers } from 'redux';
 import authReducer from './authReducer';
-import organizerReducer from './organizerReducer';
 import { firestoreReducer } from 'redux-firestore';
 import { firebaseReducer } from 'react-redux-firebase';
+import recipesReducer from './recipesReducer';
 
 const rootReducer = combineReducers({
   auth: authReducer,
-  organizer: organizerReducer,
   firestore: firestoreReducer,
   firebase: firebaseReducer,
+  recipes: recipesReducer,
 });
 
 export default rootReducer;

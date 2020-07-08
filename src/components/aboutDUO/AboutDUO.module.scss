@@ -1,0 +1,34 @@
+@import 'src/variables';
+
+.green {
+  color: $myGreen;
+}
+
+.red {
+  color: $myRed;
+}
+
+.blue {
+  color: $myBlue;
+}
+
+.bgJumbotron {
+  background: transparent;
+}
+
+.block {
+  background: $myGrey-300;
+  min-height: 100vh;
+}
+
+.h1 {
+  color: $myGrey-500;
+}
+
+.slogan {
+  color: $myWhite;
+}
+
+.content {
+  color: $myGrey-700;
+}

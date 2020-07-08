@@ -1,6 +1,6 @@
-@import '~bootswatch/dist/united/variables';
+@import '~bootswatch/dist/materia/variables';
 @import '~bootstrap/scss/bootstrap';
-@import '~bootswatch/dist/united/bootswatch';
+@import '~bootswatch/dist/materia/bootswatch';
 
 html {
   //min-height: 100vh;
@@ -27,4 +27,12 @@ body {
 .addTextDecoration:hover,
 .addTextDecoration:active {
   text-decoration: underline;
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+.withBorder {
+  border: 2px solid black;
 }

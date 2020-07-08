@@ -1,0 +1,180 @@
+@import 'src/variables';
+
+.block {
+  background: $myGrey-300;
+  min-height: 100vh;
+}
+
+.select {
+  color: $myWhite;
+  //box-shadow: inset 0 -2px 0 $myGrey-700;
+  box-shadow: none;
+  border: 1px solid $myGrey-500;
+  border-radius: 1rem;
+  padding: 1rem;
+  font-size: 1rem;
+  &:focus {
+    //box-shadow: inset 0 -2px 0 $myGreen;
+    box-shadow: none;
+    border: 1px solid $myGreen;
+  }
+}
+
+.input[type='text'] {
+  color: $myWhite;
+  background: transparent;
+  box-shadow: inset 0 -2px 0 $myGrey-700;
+  font-size: 1rem;
+
+  &::placeholder {
+    color: $myGrey-700;
+  }
+
+  &:focus {
+    box-shadow: inset 0 -2px 0 $myGreen;
+  }
+}
+
+.label {
+  color: $myBlue;
+}
+
+.addP {
+  color: $myGreen;
+}
+
+.textarea[placeholder='Body'] {
+  color: $myWhite;
+  background: transparent;
+  box-shadow: none;
+  border: 1px solid $myGrey-500;
+  font-size: 1rem;
+  padding: 0.5rem;
+  &::placeholder {
+    color: $myGrey-700;
+  }
+  &:focus {
+    border: 1px solid $myGreen;
+    box-shadow: none;
+  }
+}
+
+.number {
+  color: $myGrey-700;
+  font-size: 1.5rem;
+}
+
+.button {
+  background: $myGreen;
+  color: $myGrey-100;
+  border-radius: 2rem;
+  &:hover {
+    box-shadow: none;
+    color: $myGrey-100;
+  }
+}
+
+.buttonDelete {
+  background: $myRed;
+  color: $myGrey-100;
+  border-radius: 2rem;
+  &:hover {
+    box-shadow: none !important;
+    color: $myGrey-100;
+  }
+  &:focus {
+    box-shadow: none !important;
+    color: $myGrey-100;
+  }
+}
+
+.plus {
+  color: $myRed;
+}
+
+.errMessage {
+  color: $myRed;
+}
+
+.modalSuccess {
+  margin-top: 8rem;
+  background: $myGrey-300;
+  box-shadow: 0 1px 4px $myGreen;
+  h3 {
+    color: $myGreen;
+  }
+  p {
+    color: $myGrey-700;
+  }
+  button {
+    background: $myGreen;
+    color: $myGrey-100;
+    border-radius: 2rem;
+    font-weight: bolder;
+    &:hover {
+      box-shadow: none;
+      color: $myGrey-100;
+    }
+  }
+}
+
+.h4 {
+  text-transform: uppercase;
+  color: $myRed;
+}
+
+.trMain {
+  color: $myBlue;
+}
+
+.tr {
+  color: $myWhite;
+}
+
+.th {
+  border-bottom: none !important;
+  border-top: none !important;
+}
+
+.td {
+  border-top: 1px solid $myGrey-500 !important;
+  border-bottom: 1px solid $myGrey-500 !important;
+}
+
+.stepCount {
+  color: $myBlue;
+  font-weight: bolder;
+}
+
+.cardBody {
+  background-color: $myGrey-300;
+  color: $myWhite;
+  border: 1px solid $myGrey-500;
+}
+
+.stepItem {
+  box-shadow: none;
+}
+
+.modalDialog {
+  background-color: $myGrey-300;
+  h4 {
+    color: $myGreen;
+  }
+  span {
+    color: $myGreen;
+    text-shadow: none;
+  }
+  p {
+    color: $myGrey-700;
+  }
+}
+
+.makeChanges {
+  color: $myRed;
+}
+
+.loadingP {
+  color: $myGrey-500;
+  font-size: 1.5rem;
+}

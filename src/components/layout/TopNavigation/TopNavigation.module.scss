@@ -1,0 +1,93 @@
+@import 'src/variables';
+
+.home {
+  background-image: url('/images/home.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 1.5rem;
+  background-size: contain;
+}
+
+.user {
+  background-image: url('/images/user.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 1.5rem;
+  background-size: contain;
+}
+
+.dish {
+  background-image: url('/images/dishActive.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 1.5rem;
+  background-size: contain;
+}
+
+.breakfasts {
+  background-image: url('/images/breakfastActive.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 1.5rem;
+  background-size: contain;
+}
+
+.dinners {
+  background-image: url('/images/soupActive.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 1.5rem;
+  background-size: contain;
+}
+
+.suppers {
+  background-image: url('/images/dinnerActive.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 1.5rem;
+  background-size: contain;
+}
+
+.drinks {
+  background-image: url('/images/juiceActive.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 1.5rem;
+  background-size: contain;
+}
+
+.desserts {
+  background-image: url('/images/muffinActive.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 1.5rem;
+  background-size: contain;
+}
+
+.snacks {
+  background-image: url('/images/sandwichActive.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 1.5rem;
+  background-size: contain;
+}
+
+.salads {
+  background-image: url('/images/saladActive.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 1.5rem;
+  background-size: contain;
+}
+
+.other {
+  background-image: url('/images/otherActive.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 1.5rem;
+  background-size: contain;
+}
+
+.link {
+  font-size: 1rem;
+}

@@ -1,0 +1,27 @@
+@import 'src/variables';
+
+.recipes {
+  background-image: url('/images/dish.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 4rem;
+  background-size: contain;
+}
+
+.block {
+  background: $myGrey-300;
+  min-height: 100vh;
+}
+
+.h1 {
+  color: $myRed;
+}
+
+.cardItem {
+  background: $myGrey-300;
+  box-shadow: 0 1px 4px $myBlue;
+  h4 {
+    color: $myBlue;
+    text-transform: uppercase;
+  }
+}
